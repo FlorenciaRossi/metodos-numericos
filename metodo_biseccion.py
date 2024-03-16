@@ -1,9 +1,5 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Mon Mar 11 18:39:37 2024
 
-@author: Flor
-"""
 a=int(input("ingrese valor a"))
 b=int(input("ingrese valor b"))
 epsilon =1/100
