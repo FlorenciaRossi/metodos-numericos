@@ -2,7 +2,9 @@
 
 a=int(input("ingrese valor a: "))
 b=int(input("ingrese valor b: "))
-epsilon =1/1000
+
+#error tal que tenga los primeros 2 decimales correctos
+epsilon =1/100
 def biseccion(a, b):
     
     if not(sgn(p(b)) * sgn(p(a)) < 0):
@@ -25,7 +27,7 @@ def biseccion(a, b):
         #prox iteración evaluo en [ a (=c), b]
         else:
             a=c
-     
+    
     return c
 
 
@@ -39,11 +41,11 @@ def sgn(z):
         return -1
     
     
-# FUNCIONES
-def f(c):
-    return (c**5)+(c**4)+(2*(c**3))-100
-def p(c):
-    return c - 2
+# FUNCIÓN
+
+def p(x):
+    return ( x*x*x ) - x + 1
+    #return c - 2
 
 
 resultado = biseccion(a,b)
