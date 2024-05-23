@@ -10,10 +10,12 @@ x = sp.symbols('x')
 #f = x**3 - 1
 #f = x**3 -x +1
 #f = sp.exp(-x) - sp.sin(x)
-f = sp.abs(x - 5)
+#f = 2*x ++ 3
+f = (math.e ** x) - math.e
+
 #Datos iniciales
 a=0
-b=7
+b=2
 xo = biseccion_un_paso.biseccion(f, a, b)
 epsilon = 0.001 
 
@@ -31,9 +33,6 @@ def newton(f):
         xn = xi - f.subs(x, xi) / der.subs(x, xi)
         error = abs( (xn -xi).evalf() )
         xi = xn
-        print(xn.evalf())
-        print(xi.evalf())
-        print("error" ,error)
     return sp.N(xn , 4)             
     #sp.N(expr, <args>) : expresión sympy -> número decimal (aproximación)
     
@@ -43,4 +42,4 @@ print("Raíz aproximada de f(x)", newton(f))
 #NO CONVERGE CON LAS SIGUIENTES FUNCIONES
 #raix(x)
 #2/x no tiene raíz
-
+#|x+5| no converge usando biseccion ya que en a y en b nunca tendrá signo distinto

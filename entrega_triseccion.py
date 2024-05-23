@@ -46,7 +46,7 @@ def sgn(z):
 # FUNCIÓN
 def f(x):
     return ( x*x*x ) - 1
-    #return c - 2
+    
 
 
 resultado = format(method_triseccion(f, a, b) , '.2f')

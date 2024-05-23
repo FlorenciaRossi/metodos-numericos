@@ -29,10 +29,10 @@ def newton(f):
     
 # Definir la función 
 #f = x**2 + 3*x + 2
-f = x**3 - 1
+#f = x**3 - 1
 #f = x**3 -x +1
 #f = sp.exp(-x) - sp.sin(x)
-#f = Abs(x - 5)   
+#f = abs(x - 5)   
 
 print("Raíz aproximada" , newton(f))
 
